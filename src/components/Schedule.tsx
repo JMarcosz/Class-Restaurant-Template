@@ -4,20 +4,30 @@ import BtnStroke from "./btn_stroke";
 import useWindowWidth from "../utils/windowWidth";
 import { data } from "../data/data";
 
-export default function Schedule() {
+interface ScheduleProps {
+  color?: boolean;
+}
+
+export default function Schedule({ color }: ScheduleProps) {
   const winWidth = useWindowWidth();
 
   //valores de estilos para evitar repeticion
-  const textStyle = "md:text-1xl lg:text-4xl text-left p-2 font-normal my-7 ";
+  const textStyle = `md:text-1xl lg:text-4xl text-left p-2 font-normal my-7 ${
+    color ? "text-white" : "text-black"
+  }`;
   const titleStyle =
     "md:text-2xl lg:text-5xl font-bold text-left mb-10 flex gap-x-5";
   const positionBtn = "align-center mt-6 translate-y-1/2 -translate-x-1/4";
-  const liStyle = "mb-4 xl:mb-4> 4xl:mb-20";
+  const liStyle = "mb-4 xl:mb-4 4xl:mb-20";
 
   //logica para el responsive
   if (winWidth > 900) {
     return (
-      <div className="grid grid-cols-3 grid-flow-row-dense min-h-[250px] max-h-[1300px] bg-white justify-center py-20">
+      <div
+        className={`grid grid-cols-3 grid-flow-row-dense min-h-[250px] max-h-[1300px] justify-center py-20 ${
+          color ? "bg-black" : "bg-white"
+        }`}
+      >
         <img
           className="min-w-[800px] max-w-[1100px] object-cover rounded-xl col-span-1 h-full w-full -translate-x-52 "
           src={ScheduleImg.img}
@@ -47,7 +57,7 @@ export default function Schedule() {
             <li className={liStyle}>WhatsApp: {data.phone}</li>
             <li className={liStyle}>{data.email}</li>
             <li className={positionBtn}>
-              <BtnStroke borderSize=" border-8" color="black" Size=" xl:h-14">
+              <BtnStroke color={`${color ? "white" : "black"}`} Size=" xl:h-14">
                 Ver Detalles
               </BtnStroke>
             </li>
@@ -63,7 +73,7 @@ export default function Schedule() {
               <li className={liStyle}>{item.ubicacion}</li>
             ))}
             <li className={positionBtn}>
-              <BtnStroke borderSize=" border-8" color="black" Size=" xl:h-14">
+              <BtnStroke color={`${color ? "white" : "black"}`} Size=" xl:h-14">
                 Ver Detalles
               </BtnStroke>
             </li>
@@ -83,7 +93,7 @@ export default function Schedule() {
   }
   //vista para pantallas pequeñas
   return (
-    <div className="*:text-white *:font-semibold *:text-lg *:text-left">
+    <div className=" bg-black *:text-white *:font-semibold *:text-lg *:text-left">
       <div className="relative flex items-center py-10 overflow-hidden">
         {/* Texto */}
         <div className="flex flex-col gap-8 pl-12 w-[80%]">

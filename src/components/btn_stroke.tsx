@@ -20,7 +20,7 @@ export default function BtnStroke({
           color ? `border-${color}` : "border-white"
         } p-1 w-44 lg:w-64 xl:w-64 xl:h-12  md:w-86 justify-self-center text-center items-center min-h-10 ` +
         (Size ? Size : " h-10") +
-        (borderSize ? borderSize : " border-4")
+        (borderSize ? " " + borderSize : " border-4")
       }
     >
       <p
