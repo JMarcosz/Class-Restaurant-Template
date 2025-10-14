@@ -81,10 +81,10 @@ export default function Schedule({ color }: ScheduleProps) {
 
           <div>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.2424998933925!2d-69.94352168818489!3d18.472671682539183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf89e4e39a2ab5%3A0x98df0764eaed40ca!2sBlueMall%20Santo%20Domingo!5e0!3m2!1ses-419!2sus!4v1759502904753!5m2!1ses-419!2sus"
-              width="500"
+              src={data.globalUbicationLink}
+              width="600"
               height="450"
-              className="max-w-[500px]"
+              className="max-w-[600px] rounded-xl"
             ></iframe>
           </div>
         </div>
