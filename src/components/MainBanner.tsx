@@ -8,6 +8,7 @@ interface MainBannerProps {
   btn?: boolean;
   Size?: string;
   line?: boolean;
+  boxH?: string;
 }
 
 export default function MainBanner({
@@ -18,10 +19,13 @@ export default function MainBanner({
   btn,
   Size,
   line,
+  boxH,
 }: MainBannerProps) {
   return (
     <div
-      className="bg-black bg-cover w-full h-96  bg-center bg-no-repeat -mb-10 md:h-screen md:mb-10 md:max-h-[88vh] justify-center items-center flex flex-col pt-10 "
+      className={`bg-black bg-cover w-full h-96  bg-center bg-no-repeat -mb-10  md:h-auto md:mb-10 md:max-h-[88vh] justify-center items-center flex flex-col md:pt-20  ${
+        boxH ? boxH : " "
+      }`}
       style={{
         backgroundImage: imgUrl
           ? imgUrl
@@ -53,7 +57,7 @@ export default function MainBanner({
           )}
         </p>
         {btn && (
-          <BtnStroke color="white" Size="h-4 mt-4">
+          <BtnStroke color="white" Size="h-4 mt-6 md:-mt-6">
             {btnText ? btnText : "Ver pdf"}
           </BtnStroke>
         )}

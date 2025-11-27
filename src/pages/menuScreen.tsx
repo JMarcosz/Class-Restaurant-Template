@@ -3,7 +3,7 @@ import Header from "../components/header";
 import Banners from "../components/Banners";
 import { bannersImgMenu } from "../data/itemsImg";
 import Footer from "../components/footer";
-import MainBanner from "../components/mainBanner";
+import MainBanner from "../components/MainBanner";
 
 export default function MenuScreen() {
   return (

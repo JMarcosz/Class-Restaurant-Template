@@ -1,12 +1,13 @@
 import Header from "../components/header";
 import Footer from "../components/footer";
-import MainBanner from "../components/mainBanner";
-import useWindowWidth from "../utils/windowWidth";
+import MainBanner from "../components/MainBanner";
+/* import useWindowWidth from "../utils/windowWidth"; */
 import Schedule from "../components/Schedule";
 import { data } from "../data/data";
+import ContactForm from "../components/ContactForm";
 
 export default function ContactScreen() {
-  const windWith = useWindowWidth();
+  /*   const windWith = useWindowWidth(); */
   return (
     <body className="bg-black">
       <Header />
@@ -15,7 +16,9 @@ export default function ContactScreen() {
           title="Contactanos"
           subtitle={[" ", " "]}
           btn={false}
-          Size="text-5xl md:text-8xl lg:text-[200px] md:pt-20"
+          Size="text-5xl md:text-8xl lg:text-[200px] md:pt-10
+         md:h-82 "
+          boxH="-mb-32 "
         />
       </main>
       <Schedule color={true} />
@@ -37,20 +40,7 @@ export default function ContactScreen() {
           <h2>Síguenos En nuestras redes sociales</h2>
           <h2>Logos</h2>
         </div>
-
-        <form className="flex flex-col gap-10 mt-10 max-w-2xl w-full px-4">
-          <h2 className="text-white text-5xl">
-            ¡Contáctanos y reserva tu cupo para una sabrosa experiencia!
-          </h2>
-          <div className="flex flex-col gap-10 mt-10">
-            <input type="text"></input>
-            <input type="text"></input>
-          </div>
-          <input type="email"></input>
-          <input type="number"></input>
-          <textarea name="msg" id="msg"></textarea>
-          <button></button>
-        </form>
+        <ContactForm />
       </section>
 
       <Footer />

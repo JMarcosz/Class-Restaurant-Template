@@ -12,7 +12,7 @@ export default function Schedule({ color }: ScheduleProps) {
   const winWidth = useWindowWidth();
 
   //valores de estilos para evitar repeticion
-  const textStyle = `md:text-1xl lg:text-4xl text-left p-2 font-normal my-7 ${
+  const textStyle = `md:text-1xl lg:text-3xl text-left p-2 font-normal my-7 ${
     color ? "text-white" : "text-black"
   }`;
   const titleStyle =
