@@ -1,3 +1,14 @@
+export interface dataType {
+  name: string;
+  phone: string;
+  email: string;
+  Horario: string;
+  imstagram: string;
+  tiktok: string;
+  ubicacion1: { ubicacion1: string; link: string }[];
+  delivery: { servicio1: string; link: string }[];
+}
+
 export const data = {
   name: "100 Montaditos",
   phone: "123-456-789",
@@ -17,16 +28,17 @@ export const data = {
     },
     {
       ubicacion: "Sucursal Downtown Center",
+      ubicacion: "Sucursal Downtown Center",
       link: "https://goo.gl/maps/xyz123",
     },
   ],
   delivery: [
     {
-      servicio1: "Uber Eats ",
+      servicio: "Uber Eats ",
       link: "https://wa.me/123456789?text=Hola,%20quiero%20hacer%20un%20pedido",
     },
     {
-      servicio2: "Rappi",
+      servicio: "Rappi",
       link: "https://wa.me/123456789?text=Hola,%20quiero%20hacer%20un%20pedido",
     },
   ],
