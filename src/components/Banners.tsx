@@ -42,7 +42,7 @@ export default function Banners({ btn, data }: BannersProps) {
   return (
     <div className="grid grid-cols-1 gap-10 mt-28 mb-10 lg:mt-60">
       {data.map((banner: dataItemsImg) => (
-        <div
+        <
           style={{ backgroundImage: `url(${banner.bgImg})` }}
           className="flex bg-cover bg-center bg-no-repeat h-48 md:h-80 lg:h-[500px] xl:h-[500px] 2xl:h-[2000px] "
         >
@@ -95,7 +95,7 @@ export default function Banners({ btn, data }: BannersProps) {
               />
             </div>
           )}
-        </div>
+        
       ))}
     </div>
   );
