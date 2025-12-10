@@ -10,6 +10,7 @@ export default function MenuScreen() {
     <main className="bg-black justify-center">
       <Header />
       {/*Seccion de imagen de fondo con texto menu*/}
+
       <MainBanner
         title="Menu "
         subtitle={["Descarga la seccion del ", "catalogo 2025"]}

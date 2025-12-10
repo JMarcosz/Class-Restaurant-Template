@@ -45,7 +45,8 @@ export default function MainBanner({
       <div
         className={`w-64 flex flex-col justify-center items-center   border-white mt-4 md:mt-10 md:w-2/3 md:mb-0 ${
           line ? "border-t-4" : ""
-        }`}
+        }  ${btn ? "-pb-4 md:pb-10 lg:pb-auto" : "pb-6 md:pb-20"}
+       `}
       >
         <p className="text-white text-center mt-4 md:text-3xl lg:md:text-4xl mb-2 md:mb-20">
           {subtitle ? (

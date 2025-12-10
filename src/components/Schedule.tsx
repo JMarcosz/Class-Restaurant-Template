@@ -21,7 +21,7 @@ export default function Schedule({ color }: ScheduleProps) {
   const liStyle = "mb-4 xl:mb-4 4xl:mb-20";
 
   //logica para el responsive
-  if (winWidth > 900) {
+  if (winWidth > 1200) {
     return (
       <div
         className={`grid grid-cols-3 grid-flow-row-dense min-h-[250px] max-h-[1300px] justify-center py-20 ${
@@ -93,7 +93,7 @@ export default function Schedule({ color }: ScheduleProps) {
   }
   //vista para pantallas pequeñas
   return (
-    <div className=" bg-black *:text-white *:font-semibold *:text-lg *:text-left">
+    <div className=" bg-black mb-10 *:text-white *:font-semibold *:text-lg *:text-left">
       <div className="relative flex items-center py-10 overflow-hidden">
         {/* Texto */}
         <div className="flex flex-col gap-8 pl-12 w-[80%]">
@@ -102,16 +102,23 @@ export default function Schedule({ color }: ScheduleProps) {
               <CalendarClock size={32} />
               <h2>Horarios</h2>
             </div>
-            <p className="py-3 font-normal">Todos los días: 11 am a 11 pm.</p>
+            <p className="font-normal text-white text-2xl my-2  md:mb-10 md:text-5xl">
+              Todos los días: 11 am a 11 pm.
+            </p>
           </div>
           <div>
             <div className="flex gap-5 items-center">
               <MapPinned size={32} />
               <h2>Ubicación</h2>
             </div>
-            <p className="py-3 font-normal">
-              Sucursal Galería 360 Sucursal Downtown Center
-            </p>
+
+            {data.ubicacion.map((item) => (
+              <div>
+                <h2 className="font-normal text-white text-2xl my-2  lg:mb-10 md:text-5xl">
+                  {item.ubicacion}
+                </h2>
+              </div>
+            ))}
           </div>
         </div>
 
