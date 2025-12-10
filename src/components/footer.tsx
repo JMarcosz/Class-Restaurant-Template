@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-white text-black md:py-20 text-xl md:text-xl lg:text-2xl text-base/8 pt-10">
+    <footer className="bg-white text-black md:pt-20 pb-10 text-xl md:text-xl lg:text-2xl text-base/8 pt-10">
       {/* Primera fila */}
       <div className="max-w-6xl mx-auto px-4 w-full flex flex-col md:flex-row md:justify-between md:gap-20">
         <div className="flex-1">
@@ -46,7 +46,7 @@ const Footer: React.FC = () => {
         </div>
       </div>
       {/* Segunda fila */}
-      <div className="mt-8 border-t border-gray-700 pt-4">
+      <div className="mt-8 border-t border-gray-700 pt-10">
         <div className="max-w-6xl mx-auto px-4 text-center ">
           © {new Date().getFullYear()} Restaurante. Todos los derechos
           reservados.
