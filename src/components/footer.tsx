@@ -1,6 +1,6 @@
 import React from "react";
 import { data } from "../data/data";
-import { Instagram } from "lucide-react";
+import { Instagram, Facebook } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Footer: React.FC = () => {
@@ -40,6 +40,15 @@ const Footer: React.FC = () => {
                 className="hover:text-gray-400"
               >
                 <Instagram size={30} />
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                aria-label="Instagram"
+                className="hover:text-gray-400"
+              >
+                <Facebook size={30} />
               </a>
             </li>
           </ul>

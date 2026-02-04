@@ -1,6 +1,6 @@
 import useWindowWidth from "../utils/windowWidth";
 import type { dataItemsImg } from "../data/itemsImg";
-import BannerSection from "./BannersTow";
+import BannerSection from "./BannersTwo";
 
 export interface BannersProps {
   btn?: boolean;

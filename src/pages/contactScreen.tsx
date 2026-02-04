@@ -1,51 +1,66 @@
-import Header from "../components/header";
-import Footer from "../components/footer";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 import MainBanner from "../components/MainBanner";
-/* import useWindowWidth from "../utils/windowWidth"; */
 import Schedule from "../components/Schedule";
 import { data } from "../data/data";
 import ContactForm from "../components/ContactForm";
+import { Instagram } from "lucide-react";
 
 export default function ContactScreen() {
-  /*   const windWith = useWindowWidth(); */
   return (
-    <body className="bg-black">
-      <Header />
-      <main>
-        <MainBanner
-          title="Contactanos"
-          subtitle={[" ", " "]}
-          btn={false}
-          Size="text-5xl md:text-8xl lg:text-[200px] md:pt-10
-         md:h-82 "
-          boxH="-mb-32 "
-        />
-      </main>
-      <Schedule color={true} />
-      <div className="flex flex-col lg:flex-row lg:justify-around items-center justify-center gap-10 my-20">
-        {data.ubicacion.map((item) => (
-          <div>
-            <h2 className="text-white text-3xl mb-8  md:mb-10 md:text-5xl">
-              {item.ubicacion}
-            </h2>
-            <iframe
-              src={item.link}
-              width="700"
-              height="450"
-              className="max-w-[500px] lg:max-w-[700px]"
-            ></iframe>
-          </div>
-        ))}
-      </div>
-      <section className="bg-black flex flex-col justify-center items-center py-16">
-        <div className="text-white text-5xl">
-          <h2>Síguenos En nuestras redes sociales</h2>
-          <h2>Logos</h2>
-        </div>
-        <ContactForm />
-      </section>
+    <div className="bg-black">
+      <div className="w-[95%] md:w-full mx-auto">
+        <Header />
+        <main>
+          <MainBanner
+            title="Contáctanos"
+            subtitle={[" ", " "]}
+            btn={false}
+            boxH="-mb-32 "
+          />
+        </main>
 
-      <Footer />
-    </body>
+        <div className="animate-fade-in">
+          <Schedule color={true} />
+        </div>
+
+        {/* Social Media & Contact Form Section */}
+        <section className="bg-black flex flex-col justify-center items-center py-16 px-4">
+          <div className="text-white text-center mb-12 animate-fade-in">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-6">
+              Síguenos en nuestras redes sociales
+            </h2>
+            <div className="flex justify-center gap-8 mt-8">
+              <a
+                href={data.imstagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover-scale hover-glow transition-all duration-300"
+                aria-label="Instagram"
+              >
+                <Instagram size={48} className="text-white hover:text-yellow-400 md:w-16 md:h-16 lg:w-20 lg:h-20" />
+
+              </a>
+              <a
+                href={data.tiktok}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover-scale hover-glow"
+                aria-label="TikTok"
+              >
+                <img
+                  src="/src/assets/images-webp/tiktok.webp"
+                  alt="TikTok"
+                  className="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 hover:opacity-80 transition-opacity"
+                />
+              </a>
+            </div>
+          </div>
+          <ContactForm />
+        </section>
+
+        <Footer />
+      </div>
+    </div>
   );
 }

@@ -1,16 +1,19 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import HomeScreen from "./pages/homeScreen";
-import MenuScreen from "./pages/menuScreen";
-import ContactScreen from "./pages/contactScreen";
+import HomeScreen from "./pages/HomeScreen";
+import MenuScreen from "./pages/MenuScreen";
+import ContactScreen from "./pages/ContactScreen";
+import PageTransition from "./components/PageTransition";
 
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/*" element={<HomeScreen />} />
-        <Route path="/Menu" element={<MenuScreen />} />
-        <Route path="/Contacto" element={<ContactScreen />} />
-      </Routes>
+      <PageTransition>
+        <Routes>
+          <Route path="/*" element={<HomeScreen />} />
+          <Route path="/Menu" element={<MenuScreen />} />
+          <Route path="/Contacto" element={<ContactScreen />} />
+        </Routes>
+      </PageTransition>
     </BrowserRouter>
   );
 }
