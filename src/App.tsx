@@ -1,27 +1,20 @@
-import "./App.css";
-import Header from "./components/header";
-import BtnStroke from "./components/btn_stroke";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import HomeScreen from "./pages/HomeScreen";
+import MenuScreen from "./pages/MenuScreen";
+import ContactScreen from "./pages/ContactScreen";
+import PageTransition from "./components/PageTransition";
 
 function App() {
   return (
-    <>
-      <Header />
-      <div
-        className="bg-white w-full h-[45vh] fixed bg-cover bg-center bg-no-repeat md:h-screen justify-center items-center flex relative"
-        style={{ backgroundImage: "url('/src/assets/images/local_bg.png')" }}
-      >
-        <h1 className="text-5xl font-bold text-white">Welcome</h1>
-      </div>
-
-      <div className="w-full p-4 ph-10 justify-center  ">
-        <h1 className="text-3xl font-bold text-white relative">Welcome</h1>
-        <p className="text-white relative m-4">
-          Lorem Ipsum es simplemente el texto de relleno de las imprentas y
-          archivos de texto.{" "}
-        </p>
-        <BtnStroke />
-      </div>
-    </>
+    <BrowserRouter>
+      <PageTransition>
+        <Routes>
+          <Route path="/*" element={<HomeScreen />} />
+          <Route path="/Menu" element={<MenuScreen />} />
+          <Route path="/Contacto" element={<ContactScreen />} />
+        </Routes>
+      </PageTransition>
+    </BrowserRouter>
   );
 }
 
