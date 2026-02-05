@@ -49,7 +49,7 @@ export default function ContactScreen() {
                 aria-label="TikTok"
               >
                 <img
-                  src="/src/assets/images-webp/tiktok.webp"
+                  src="/assets/images-webp/tiktok.webp"
                   alt="TikTok"
                   className="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 hover:opacity-80 transition-opacity"
                 />

@@ -26,7 +26,7 @@ export default function MainBanner({
       style={{
         backgroundImage: imgUrl
           ? imgUrl
-          : "url('/src/assets/images-webp/bannersImg/fondomenu.webp')",
+          : "url('/assets/images-webp/bannersImg/fondomenu.webp')",
       }}
     >
       {/* Overlay oscuro para mejorar contraste */}

@@ -2,7 +2,7 @@ export default function DeliveriSection() {
   return (
     <div
       style={{
-        backgroundImage: `url("/src/assets/images-webp/bannersImg/Bbg1.webp")`,
+        backgroundImage: `url("/assets/images-webp/bannersImg/Bbg1.webp")`,
       }}
       className="flex bg-cover bg-center bg-no-repeat h-48 md:h-80 lg:h-[640px] items-center xl:h-[500px] 2xl:h-[700px] animate-fade-in relative"
     >
@@ -19,7 +19,7 @@ export default function DeliveriSection() {
           </h2>
         </div>
         <img
-          src="/src/assets/images-webp/bannersImg/delivery.webp"
+          src="/assets/images-webp/bannersImg/delivery.webp"
           alt="Delivery"
           className="w-52 -top-12 mt-10 md:w-96 md:translate-x-1/4 lg:w-3/5 2xl:max-w-[1100px] hover-scale"
         />
