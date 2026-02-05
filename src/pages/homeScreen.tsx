@@ -19,7 +19,7 @@ export default function HomeScreen() {
         {/*Seccion de imagen de fondo con texto Welcome*/}
         <div
           className="bg-white w-full h-96 bg-cover bg-center bg-no-repeat mb-5 md:h-screen md:max-h-[88vh] justify-center items-center flex animate-fade-in relative"
-          style={{ backgroundImage: "url('/src/assets/images-webp/local_bg.webp')" }}
+          style={{ backgroundImage: "url('/assets/images-webp/local_bg.webp')" }}
         >
           {/* Overlay oscuro para mejorar contraste */}
           <div className="absolute inset-0 bg-black/40"></div>

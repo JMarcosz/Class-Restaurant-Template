@@ -14,7 +14,7 @@ export default function Header() {
     >
       <div className="container mx-auto px-16 flex justify-between items-center">
         <div className="w-16 sm:w-20 hover-scale cursor-pointer">
-          <img src="/src/assets/images-webp/logo.webp" alt="Restaurant Logo" />
+          <img src="/assets/images-webp/logo.webp" alt="Restaurant Logo" />
         </div>
 
         {windWith > 768 && (
@@ -32,14 +32,14 @@ export default function Header() {
               <Link to="#" className="hover-scale">
                 <img
                   className="w-5 md:w-6 lg:w-7"
-                  src="/src/assets/images-webp/tiktok.webp"
+                  src="/assets/images-webp/tiktok.webp"
                   alt="TikTok"
                 />
               </Link>
               <Link to="#" className="hover-scale">
                 <img
                   className="w-5 md:w-6 lg:w-7"
-                  src="/src/assets/images-webp/ig.webp"
+                  src="/assets/images-webp/ig.webp"
                   alt="Instagram"
                 />
               </Link>
@@ -80,14 +80,14 @@ export default function Header() {
               <Link to="#" className="hover-scale">
                 <img
                   className="w-8 h-8 object-contain"
-                  src="/src/assets/images-webp/tiktok.webp"
+                  src="/assets/images-webp/tiktok.webp"
                   alt="TikTok"
                 />
               </Link>
               <Link to="#" className="hover-scale">
                 <img
                   className="w-8 h-8 object-contain"
-                  src="/src/assets/images-webp/ig.webp"
+                  src="/assets/images-webp/ig.webp"
                   alt="Instagram"
                 />
               </Link>
