@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import HomeScreen from "./pages/HomeScreen";
-import MenuScreen from "./pages/MenuScreen";
-import ContactScreen from "./pages/ContactScreen";
+import HomeScreen from "./pages/homeScreen";
+import MenuScreen from "./pages/menuScreen";
+import ContactScreen from "./pages/contactScreen";
 import PageTransition from "./components/PageTransition";
 
 function App() {

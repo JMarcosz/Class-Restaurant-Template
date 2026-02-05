@@ -1,8 +1,8 @@
 import "../App.css";
-import Header from "../components/Header";
+import Header from "../components/header";
 import Banners from "../components/Banners";
 import { bannersImgMenu } from "../data/itemsImg";
-import Footer from "../components/Footer";
+import Footer from "../components/footer";
 import MainBanner from "../components/MainBanner";
 
 export default function MenuScreen() {

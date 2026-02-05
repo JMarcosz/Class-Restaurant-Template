@@ -1,5 +1,5 @@
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Header from "../components/header";
+import Footer from "../components/footer";
 import MainBanner from "../components/MainBanner";
 import Schedule from "../components/Schedule";
 import { data } from "../data/data";

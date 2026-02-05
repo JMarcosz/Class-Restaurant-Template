@@ -1,13 +1,13 @@
-import Header from "../components/Header";
+import Header from "../components/header";
 import Button from "../components/Button";
 import Banners from "../components/Banners";
 import Schedule from "../components/Schedule";
-import Cuadricula from "../components/Cuadricula";
+import Cuadricula from "../components/cuadricula";
 import useWindowWidth from "../utils/windowWidth";
 import DeliveriSection from "../components/DeliveriSection";
 
 import { bannersImg } from "../data/itemsImg";
-import Footer from "../components/Footer";
+import Footer from "../components/footer";
 
 export default function HomeScreen() {
   const windWith = useWindowWidth();
